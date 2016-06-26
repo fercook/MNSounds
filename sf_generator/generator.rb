@@ -29,17 +29,19 @@ require 'zlib'
 include FileUtils
 
 BUILD_DIR = "./soundfont" # Output path
-SOUNDFONT = "../soundfonts/MN_SFX.sf2"  
-#"../soundfonts/MN_synth.sf2"
-# "../soundfonts/MN_drums.sf2"
-# "../soundfonts/MN_Bass.sf2"
-#"../soundfonts/MN_iglesia_1.sf2"
+SOUNDFONT = "../soundfonts/MN_drums.sf2" 
+#"../soundfonts/MN_pipe_organ_2.sf2" #Instrumento 0
+#"../soundfonts/MN_SFX.sf2"   # Instrumento 125
+#"../soundfonts/MN_synth.sf2"  #instrumento 89
+# "../soundfonts/MN_drums.sf2" # instrumento 118
+# "../soundfonts/MN_Bass.sf2" # instrumento 33
+#"../soundfonts/MN_iglesia_1.sf2"  #instrumento 0 ?? 
 #sf2/redco/TR-808-Drums.SF2" # Soundfont file path
 
 # This script will generate MIDI.js-compatible instrument JS files for
 # all instruments in the below array. Add or remove as necessary.
 INSTRUMENTS = [
-  118     # Acoustic Grand Piano
+  118     # num btw 0 and 127
 ];
 # INSTRUMENTS = [
 #   0,     # Acoustic Grand Piano
